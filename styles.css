@@ -1,0 +1,134 @@
+@media screen and (max-width: 768px) {
+    #juego {
+        width: 90vw;
+        height: 50vh;
+        margin: 5vh auto;
+    }
+
+    #stats, #control {
+        flex-direction: column;
+        height: auto;
+    }
+
+    button {
+        width: 80%;
+        height: 6vh;
+        font-size: 1rem;
+    }
+
+    #monsterStat > span:first-child, 
+    #monsterStat > span:last-child {
+        position: static;
+        text-align: center;
+        display: block;
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #juego {
+        width: 95vw;
+        height: 55vh;
+    }
+
+    button {
+        width: 90%;
+        font-size: 0.9rem;
+        height: 7vh;
+    }
+
+    #text {
+        font-size: 0.9rem;
+    }
+
+    span, strong {
+        font-size: 1rem;
+    }
+}
+
+
+body {
+    background-color: #36221D;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+#juego {
+    border: 4px solid #574C44;
+    background-color: #978164;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #556471;
+    width: 70vw;
+    height: 40vh;
+    margin: 10vh auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#stats {
+    width: 95%;
+    height: 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#control {
+    width: 95%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#monsterStat {
+    background-color: #F83535;
+    width: 80%;
+    height: 15%;
+    display: none;
+}
+#monsterStat > span:first-child {
+    position: absolute;
+    left: 30%;
+}
+#monsterStat > span:last-child {
+    position: absolute;
+    left: 60%;
+}
+
+#text {
+    width: 95%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+/*misc*/
+strong {
+    font-size: 1.1rem;
+}
+span {
+    margin: 1vh 1vw auto;
+    font-size: 1.1rem;
+}
+button {
+    border: 3px solid #2D4122;
+    border-radius: 3px;
+    margin: 0.5vh 1vw auto;
+    height: 5vh;
+    background-color: #925435;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+}
